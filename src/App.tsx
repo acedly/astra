@@ -13,8 +13,8 @@ import './styles/globals.css';
 function App() {
   return (
     <AuthProvider>
-      <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-        <div className="min-h-screen bg-background text-foreground antialiased max-w-full overflow-x-hidden">
+      <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} forcedTheme="dark">
+        <div className="dark min-h-screen bg-background text-foreground antialiased max-w-full overflow-x-hidden">
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/sign-in" element={<SignInPage />} />
