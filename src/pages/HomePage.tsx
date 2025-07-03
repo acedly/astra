@@ -137,7 +137,6 @@ const HomePage = () => {
                                 {features.map((feature) => (
                                     <div key={feature.title} className="flex flex-col items-start lg:items-start px-0 md:px-0">
                                         <div className="flex items-center justify-center">
-                                            <feature.icon className="w-8 h-8" />
                                         </div>
                                         <h3 className="text-lg font-medium mt-4">
                                             {feature.title}
