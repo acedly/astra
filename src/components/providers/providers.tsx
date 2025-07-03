@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { dark } from "@clerk/themes";
-import { ClerkProvider } from '@clerk/nextjs';
+import { ClerkProvider } from '@clerk/clerk-react';
 
 interface Props {
     children: React.ReactNode;
