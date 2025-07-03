@@ -1,6 +1,6 @@
 import Icons from "@/components/global/icons"
 import { Heart } from 'lucide-react'
-import Link from 'next/link'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -32,22 +32,22 @@ const Footer = () => {
                             </h3>
                             <ul className="mt-4 text-sm text-muted-foreground">
                                 <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
+                                    <Link to="" className="hover:text-foreground transition-all duration-300">
                                         Features
                                     </Link>
                                 </li>
                                 <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
+                                    <Link to="" className="hover:text-foreground transition-all duration-300">
                                         Pricing
                                     </Link>
                                 </li>
                                 <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
+                                    <Link to="" className="hover:text-foreground transition-all duration-300">
                                         Testimonials
                                     </Link>
                                 </li>
                                 <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
+                                    <Link to="" className="hover:text-foreground transition-all duration-300">
                                         Integration
                                     </Link>
                                 </li>
@@ -59,22 +59,22 @@ const Footer = () => {
                             </h3>
                             <ul className="mt-4 text-sm text-muted-foreground">
                                 <li className="">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
+                                    <Link to="" className="hover:text-foreground transition-all duration-300">
                                         Facebook
                                     </Link>
                                 </li>
                                 <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
+                                    <Link to="" className="hover:text-foreground transition-all duration-300">
                                         Instagram
                                     </Link>
                                 </li>
                                 <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
+                                    <Link to="" className="hover:text-foreground transition-all duration-300">
                                         Twitter
                                     </Link>
                                 </li>
                                 <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
+                                    <Link to="" className="hover:text-foreground transition-all duration-300">
                                         LinkedIn
                                     </Link>
                                 </li>
@@ -88,17 +88,17 @@ const Footer = () => {
                             </h3>
                             <ul className="mt-4 text-sm text-muted-foreground">
                                 <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
+                                    <Link to="" className="hover:text-foreground transition-all duration-300">
                                         Blog
                                     </Link>
                                 </li>
                                 <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
+                                    <Link to="" className="hover:text-foreground transition-all duration-300">
                                         Case Studies
                                     </Link>
                                 </li>
                                 <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
+                                    <Link to="" className="hover:text-foreground transition-all duration-300">
                                         Support
                                     </Link>
                                 </li>
@@ -110,17 +110,17 @@ const Footer = () => {
                             </h3>
                             <ul className="mt-4 text-sm text-muted-foreground">
                                 <li className="">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
+                                    <Link to="" className="hover:text-foreground transition-all duration-300">
                                         About Us
                                     </Link>
                                 </li>
                                 <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
+                                    <Link to="" className="hover:text-foreground transition-all duration-300">
                                         Privacy Policy
                                     </Link>
                                 </li>
                                 <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
+                                    <Link to="" className="hover:text-foreground transition-all duration-300">
                                         Terms & Conditions
                                     </Link>
                                 </li>

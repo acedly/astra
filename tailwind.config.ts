@@ -1,11 +1,13 @@
-module.exports = {
+import type { Config } from 'tailwindcss'
+
+const config: Config = {
   darkMode: ['class'],
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-    './node_modules/@tremor/**/*.{js,ts,jsx,tsx}', // Tremor module
+    './index.html',
   ],
   theme: {
     container: {
@@ -115,4 +117,6 @@ module.exports = {
     },
   },
   plugins: [require('tailwindcss-animate')],
-};
+}
+
+export default config
