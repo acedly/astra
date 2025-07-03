@@ -19,7 +19,7 @@ const Footer = () => {
                         Build beautiful, functional websites, without writing code
                     </p>
                     <span className="mt-4 text-neutral-200 text-sm flex items-center">
-                        Made in India with
+                        Made in Nigeria with
                         <Heart className="w-3.5 h-3.5 ml-1 fill-primary text-primary" />
                     </span>
                 </div>
@@ -55,7 +55,7 @@ const Footer = () => {
                         </div>
                         <div className="mt-10 md:mt-0 flex flex-col">
                             <h3 className="text-base font-medium text-white">
-                                Integrations
+                                Platforms
                             </h3>
                             <ul className="mt-4 text-sm text-muted-foreground">
                                 <li className="">
