@@ -8,24 +8,10 @@ import { Menu, X } from "lucide-react"
 
 const Navbar = () => {
   const { user } = useAuth()
-  const [scrolled, setScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 10)
-    }
-
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
-
   return (
-    <header
-      className={`px-4 sticky top-0 inset-x-0 w-full backdrop-blur-lg border-b border-border z-50 transition-all duration-300 ${
-        scrolled ? "h-12 bg-black/80" : "h-16 bg-transparent"
-      }`}
-    >
+    <header className="px-4 fixed top-0 left-0 right-0 w-full h-16 bg-black z-50 border-b border-border backdrop-blur-lg">
       <Container reverse>
         <div className="flex items-center justify-between h-full mx-auto md:max-w-screen-xl">
           <div className="flex items-start">
