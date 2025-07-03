@@ -1,34 +1,35 @@
-import { Routes, Route } from 'react-router-dom'
-import { ClerkProvider } from '@clerk/clerk-react'
-import { dark } from '@clerk/themes'
-import { cn } from "@/lib/utils"
-import HomePage from './pages/HomePage'
-import SignInPage from './pages/SignInPage'
-import SignUpPage from './pages/SignUpPage'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { ClerkProvider } from '@clerk/clerk-react';
+import { ThemeProvider } from './components';
+import HomePage from './pages/HomePage';
+import SignInPage from './pages/SignInPage';
+import SignUpPage from './pages/SignUpPage';
+import './styles/globals.css';
 
-const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
+// Get the publishable key from environment variables
+const clerkPubKey = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
-if (!PUBLISHABLE_KEY) {
+if (!clerkPubKey) {
   throw new Error("Missing Publishable Key")
 }
 
 function App() {
   return (
-    <ClerkProvider 
-      publishableKey={PUBLISHABLE_KEY}
-      appearance={{ baseTheme: dark }}
-    >
-      <div className={cn(
-        "min-h-screen bg-background text-foreground antialiased max-w-full overflow-x-hidden"
-      )}>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/sign-in" element={<SignInPage />} />
-          <Route path="/sign-up" element={<SignUpPage />} />
-        </Routes>
-      </div>
+    <ClerkProvider publishableKey={clerkPubKey}>
+      <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+        <Router>
+          <div className="min-h-screen bg-background text-foreground antialiased max-w-full overflow-x-hidden">
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/sign-in/*" element={<SignInPage />} />
+              <Route path="/sign-up/*" element={<SignUpPage />} />
+            </Routes>
+          </div>
+        </Router>
+      </ThemeProvider>
     </ClerkProvider>
-  )
+  );
 }
 
-export default App
+export default App;
