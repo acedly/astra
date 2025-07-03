@@ -1,10 +1,11 @@
 import { Container, Icons } from "@/components";
 import { buttonVariants } from "@/components/ui/button";
-import { UserButton, useUser } from "@clerk/clerk-react";
+import { useAuth } from "@/contexts/AuthContext";
+import UserButton from "@/components/auth/UserButton";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-    const { user } = useUser();
+    const { user } = useAuth();
 
     return (
         <header className="px-4 h-14 sticky top-0 inset-x-0 w-full bg-background/40 backdrop-blur-lg border-b border-border z-50">

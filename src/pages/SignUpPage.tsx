@@ -1,9 +1,9 @@
-import { SignUp } from "@clerk/clerk-react";
+import AuthForm from "@/components/auth/AuthForm";
 
 const SignUpPage = () => {
     return (
-        <div className="flex items-center justify-center h-screen">
-            <SignUp />
+        <div className="flex items-center justify-center min-h-screen bg-background">
+            <AuthForm mode="signup" />
         </div>
     );
 };
