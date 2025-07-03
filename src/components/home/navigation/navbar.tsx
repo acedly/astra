@@ -25,6 +25,9 @@ const Navbar = () => {
                             <Link to="#" className="hover:text-foreground/80 text-sm">About</Link>
                             <Link to="#" className="hover:text-foreground/80 text-sm">Features</Link>
                             <Link to="#" className="hover:text-foreground/80 text-sm">Blog</Link>
+                            {user && (
+                                <Link to="/dashboard" className="hover:text-foreground/80 text-sm">Dashboard</Link>
+                            )}
                         </ul>
                     </nav>
                     <div className="flex items-center gap-4">
