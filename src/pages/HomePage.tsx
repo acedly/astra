@@ -43,7 +43,7 @@ const HomePage = () => {
                                 <h1 className="text-4xl md:text-6xl lg:textxl md:!leading-snug font-semibold text-center bg-clip-text bg-gradient-to-b from-gray-50 to-gray-50 text-transparent">
                                     Build your next idea and ship your dream site
                                 </h1>
-                                <p className="text-base md:text-lg text-black/80 mt-6 text-center">
+                                <p className="text-base md:text-lg text-foreground/80 mt-6 text-center">
                                     Zero code, maximum speed. Make professional sites easy, fast and fun while delivering best-in-class SEO, performance.
                                 </p>
                                 <div className="hidden md:flex relative items-center justify-center mt-8 md:mt-12 w-full">
