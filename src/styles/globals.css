@@ -4,73 +4,69 @@
 
 @layer base {
   :root {
-    /* Name: custom color palette
-       Author: Ilias Ism
-       URL: https://gradient.page */
+    /* Gold Theme Palette */
+    --gradient: linear-gradient(to top left, #c29d52, #f5c962);
 
-    /* CSS: .bg-gradient { background: var(--gradient) } */
-    --gradient: linear-gradient(to top left, #007adf, #00ecbc);
+    --background: 40 20% 4%;
+    --foreground: 45 15% 95%;
 
-    --background: 220 65% 3.52%;
-    --foreground: 220 10% 97.2%;
+    --muted: 40 10% 20%;
+    --muted-foreground: 40 10% 60%;
 
-    --muted: 220 50% 13.2%;
-    --muted-foreground: 220 10% 54.4%;
+    --popover: 40 15% 6%;
+    --popover-foreground: 45 15% 95%;
 
-    --popover: 220 45% 5.72%;
-    --popover-foreground: 220 10% 97.2%;
+    --card: 40 15% 6%;
+    --card-foreground: 45 15% 95%;
 
-    --card: 220 45% 5.72%;
-    --card-foreground: 220 10% 97.2%;
+    --border: 40 15% 20%;
+    --input: 40 15% 20%;
 
-    --border: 220 50% 13.2%;
-    --input: 220 50% 13.2%;
+    --primary: 45 95% 55%;
+    --primary-foreground: 40 20% 10%;
 
-    --primary: 220 100% 44%;
-    --primary-foreground: 220 10% 97.2%;
+    --secondary: 40 15% 20%;
+    --secondary-foreground: 45 15% 95%;
 
-    --secondary: 220 50% 13.2%;
-    --secondary-foreground: 220 10% 97.2%;
+    --accent: 45 95% 55%;
+    --accent-foreground: 40 20% 10%;
 
-    --accent: 220 50% 13.2%;
-    --accent-foreground: 220 10% 97.2%;
+    --destructive: 0 70% 35%;
+    --destructive-foreground: 0 0% 100%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 220 10% 97.2%;
-
-    --ring: 220 100% 44%;
+    --ring: 45 95% 55%;
 
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 216 100% 98.04%;
-    --foreground: 213.6 100% 4.9%;
+    --background: 40 20% 3%;
+    --foreground: 45 20% 92%;
 
-    --primary: 214.12 100% 50%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 45 95% 55%;
+    --primary-foreground: 40 20% 10%;
 
-    --card: 216 100% 98.04%;
-    --card-foreground: 213.6 100% 4.9%;
+    --card: 40 15% 6%;
+    --card-foreground: 45 15% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 213.6 100% 4.9%;
+    --popover: 40 15% 6%;
+    --popover-foreground: 45 15% 95%;
 
-    --secondary: 214.74 100% 92.55%;
-    --secondary-foreground: 216 100% 0.98%;
+    --secondary: 40 10% 15%;
+    --secondary-foreground: 45 20% 92%;
 
-    --muted: 213.6 100% 95.1%;
-    --muted-foreground: 0 0% 40%;
+    --muted: 40 10% 12%;
+    --muted-foreground: 40 10% 55%;
 
-    --accent: 213.6 100% 95.1%;
-    --accent-foreground: 214.12 100% 50%;
+    --accent: 45 95% 55%;
+    --accent-foreground: 40 20% 10%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 0 0% 90.2%;
-    --input: 0 0% 90.2%;
-    --ring: 214.12 100% 50%;
+    --border: 40 10% 20%;
+    --input: 40 10% 20%;
+    --ring: 45 95% 55%;
 
     --radius: 0.5rem;
   }
@@ -108,11 +104,18 @@
 }
 
 .card-mask {
-  background: radial-gradient(ellipse at center, rgba(0, 75, 224, 0.15), transparent);
+  background: radial-gradient(ellipse at center, rgba(255, 215, 0, 0.1), transparent);
 }
 
 .gradient {
-  background: conic-gradient(from 230.29deg at 51.63% 52.16%, rgb(36, 0, 255) 0deg, rgb(0, 135, 255) 67.5deg, rgb(108, 39, 157) 198.75deg, rgb(24, 38, 163) 251.25deg, rgb(54, 103, 196) 301.88deg, rgb(105, 30, 255) 360deg);
+  background: conic-gradient(
+    from 230.29deg at 51.63% 52.16%,
+    #c29d52 0deg,
+    #f5c962 90deg,
+    #a67830 180deg,
+    #d4b24c 270deg,
+    #ffdd00 360deg
+  );
 }
 
 .lamp {
@@ -125,7 +128,6 @@
     opacity: 0;
     transform: scale(0.95);
   }
-
   100% {
     opacity: 1;
     transform: scale(1);
