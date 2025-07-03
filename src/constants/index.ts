@@ -65,7 +65,7 @@ export const pricingCards = [
     {
         title: "Unlimited Saas",
         description: "The ultimate agency kit",
-        price: "$199",
+        price: "₦999",
         duration: "month",
         highlight: "Key features",
         buttonText: "Upgrade to Pro",
@@ -75,7 +75,7 @@ export const pricingCards = [
     {
         title: "Enterprise",
         description: "For serious agency owners",
-        price: "$399",
+        price: "₦9,999",
         duration: "month",
         highlight: "Everything in Starter, plus",
         buttonText: "Upgrade to Enterprise",
