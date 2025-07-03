@@ -228,7 +228,7 @@ const HomePage = () => {
                                             key={review.name}
                                             className={cn(
                                                 "relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
-                                                "border-zinc-50/[.1] bg-background over:bg-zinc-50/[.15]",
+                                                "border-zinc-50/[.1] bg-black over:bg-zinc-50/[.15]",
                                             )}
                                         >
                                             <div className="flex flex-row items-center gap-2">
