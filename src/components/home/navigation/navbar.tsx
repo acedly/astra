@@ -15,7 +15,7 @@ const Navbar = () => {
                         <Link to="/" className="flex items-center gap-2">
                             <Icons.logo className="w-8 h-8" />
                             <span className="text-lg font-medium">
-                                Astra
+                                Kluis
                             </span>
                         </Link>
                     </div>
@@ -39,7 +39,7 @@ const Navbar = () => {
                                     Login
                                 </Link>
                                 <Link to="/sign-up" className={buttonVariants({ size: "sm", className: "hidden md:flex" })}>
-                                    Start free trial
+                                    Get started
                                 </Link>
                             </>
                         )}
