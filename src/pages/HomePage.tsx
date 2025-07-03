@@ -221,7 +221,6 @@ const HomePage = () => {
                     </Container>
                     <Container>
                         <div className="py-10 md:py-20 w-full">
-                            <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden py-10">
                                 <Marquee pauseOnHover className="[--duration:20s] select-none">
                                     {firstRow.map((review) => (
                                         <figure
